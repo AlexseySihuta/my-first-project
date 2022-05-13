@@ -1,0 +1,1325 @@
+@charset "UTF-8";
+/* line 2, C:/Users/user/Desktop/Курс 2/sass/style.sass */
+* {
+  font-family: Roboto, sans-serif;
+}
+
+/* line 2, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+header {
+  position: relative;
+}
+
+/* line 5, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+nav {
+  height: 50px;
+  background-color: #212121;
+}
+
+/* line 9, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 70px;
+  margin: 0;
+  list-style-type: none;
+}
+
+/* line 16, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.menu .menu_link {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+/* line 21, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.menu .menu_item {
+  border-right: 2px dotted black;
+  padding-right: 27px;
+}
+
+/* line 24, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.menu .menu_item:last-child {
+  border-right: none;
+}
+
+/* line 27, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.subheader {
+  position: absolute;
+  width: 100%;
+  height: 84px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* line 33, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.subheader_logo {
+  display: block;
+  margin-top: 16px;
+  max-width: 100%;
+}
+
+/* line 38, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.subheader_official {
+  margin-top: 6px;
+  opacity: 0.5;
+  font-size: 13px;
+  font-weight: 100;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* line 49, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.subheader_call {
+  margin-top: 19px;
+  font-size: 12px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: right;
+  color: #fff;
+}
+
+/* line 59, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.subheader_phone {
+  display: block;
+  margin-top: 8px;
+  font-size: 22px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: right;
+  color: #fff;
+  line-height: 12px;
+}
+
+/* line 71, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.subheader_btn {
+  width: 172px;
+  height: 46px;
+  margin: 19px 0 2px 32px;
+  box-shadow: inset 0px -3px 0 0 rgba(0, 0, 0, 0.12);
+  border: none;
+  border-radius: 4px;
+  background-color: #3fc6e0;
+  text-shadow: 0.7px 0.7px 0 rgba(0, 0, 0, 0.21);
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+}
+
+/* line 2, C:/Users/user/Desktop/Курс 2/sass/_mixins.sass */
+.subheader_btn:hover {
+  transition: 0.5s all;
+  background-image: none;
+  background-color: #379c33;
+}
+
+/* line 90, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.hamburger {
+  display: none;
+}
+
+/* line 93, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.promo {
+  padding: 150px 0 135px;
+  min-height: 800px;
+  background: url(/bg/First_bg.jpg) center center/cover no-repeat;
+}
+
+/* line 98, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.promo .promo_header {
+  /* margin-top: 67px; */
+  font-weight: 700;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+}
+
+/* line 107, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.promo .promo_subheader {
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+}
+
+/* line 115, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.promo .promo_descr {
+  margin-top: 23px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+}
+
+/* line 124, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.promo .promo_btn {
+  display: block;
+  width: 259px;
+  height: 63px;
+  margin: 118px auto 0 auto;
+  padding: 25px 39px;
+  box-shadow: inset 0px -4px 0 0 rgba(0, 0, 0, 0.12);
+  border: none;
+  border-radius: 5px;
+  background-color: #3fc6e0;
+  text-shadow: 0.7px 0.7px 0 rgba(0, 0, 0, 0.21);
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+}
+
+/* line 2, C:/Users/user/Desktop/Курс 2/sass/_mixins.sass */
+.promo .promo_btn:hover {
+  transition: 0.5s all;
+  background-image: none;
+  background-color: #379c33;
+}
+
+/* line 145, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.reasons {
+  padding: 71px 0 65px 0;
+}
+
+/* line 148, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.label {
+  margin: 0 auto;
+  height: 24px;
+  width: 112px;
+  padding: 5px 12px;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+/* line 159, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.title {
+  margin: 0 auto;
+  font-size: 38px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.26;
+  letter-spacing: normal;
+  text-align: center;
+  color: #222;
+}
+
+/* line 170, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.subtitle {
+  margin-top: 19px;
+  font-size: 17px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.24;
+  letter-spacing: normal;
+  text-align: center;
+  color: #222;
+}
+
+/* line 183, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.label {
+  position: relative;
+  margin: 0 auto;
+  height: 24px;
+  width: 112px;
+  padding: 5px 12px;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  z-index: 2;
+}
+
+/* line 196, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.label_white {
+  margin: 0 auto;
+  height: 24px;
+  width: 112px;
+  padding: 5px 12px;
+  text-align: center;
+  font-size: 13px;
+  color: #000;
+  background-color: #fff;
+}
+
+/* line 206, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.title {
+  position: relative;
+  margin-bottom: 0;
+  margin-top: 38px;
+  color: #222222;
+  font-size: 38px;
+  line-height: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  z-index: 2;
+}
+
+/* line 217, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.title_white {
+  color: #fff;
+}
+
+/* line 220, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.subtitle {
+  position: relative;
+  margin-top: 19px;
+  color: #222222;
+  font-size: 17px;
+  font-weight: 400;
+  text-align: center;
+  z-index: 2;
+}
+
+/* line 228, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.subtitle_white {
+  color: #fff;
+}
+
+/* line 231, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.reasons {
+  padding: 71px 0 65px 0;
+}
+
+/* line 234, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.reasons .label {
+  position: relative;
+  margin: 0 auto;
+  height: 24px;
+  width: 112px;
+  padding: 5px 12px;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  z-index: 2;
+}
+
+/* line 247, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.reasons .label_white {
+  background-color: #fff;
+  color: #000;
+}
+
+/* line 251, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.title {
+  position: relative;
+  margin-bottom: 0;
+  margin-top: 38px;
+  color: #222222;
+  font-size: 38px;
+  line-height: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  z-index: 2;
+}
+
+/* line 262, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.title_white {
+  color: #fff;
+}
+
+/* line 265, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.subtitle {
+  position: relative;
+  margin-top: 19px;
+  color: #222222;
+  font-size: 17px;
+  font-weight: 400;
+  text-align: center;
+  z-index: 2;
+}
+
+/* line 273, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.subtitle_white {
+  color: #fff;
+}
+
+/* line 277, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.reasons_block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+}
+
+/* line 282, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.reasons_round {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 26px;
+  width: 113px;
+  height: 113px;
+  background-color: #1eacc7;
+  border-radius: 100%;
+}
+
+/* line 291, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.reasons_descr {
+  width: 343px;
+}
+
+/* line 293, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.reasons_subtitle {
+  line-height: 21px;
+  color: #1eacc7;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+/* line 298, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.reasons_text {
+  color: #202020;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 21px;
+}
+
+/* line 304, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.mobile {
+  min-height: 864px;
+  padding: 40px 0 79px 0;
+  background: url(/bg/second.jpg) center center/cover no-repeat;
+}
+
+/* line 308, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.mobile .row {
+  margin-top: 32px;
+}
+
+/* line 310, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.mobile_item {
+  position: relative;
+  width: 320px;
+  height: 280px;
+  margin: 0 auto;
+  margin-bottom: 19px;
+  padding-top: 91px;
+}
+
+/* line 317, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.mobile_item_1 {
+  background: url(/bg/order_1.jpg) center center/cover no-repeat;
+}
+
+/* line 319, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.mobile_item_2 {
+  background: url(/bg/giv_2.jpg) center center/cover no-repeat;
+}
+
+/* line 321, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.mobile_item_3 {
+  background: url(/bg/price_3.jpg) center center/cover no-repeat;
+}
+
+/* line 323, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.mobile_item_4 {
+  background: url(/bg/many_4.jpg) center center/cover no-repeat;
+}
+
+/* line 325, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.mobile_item_5 {
+  background: url(/bg/tel_5.jpg) center center/cover no-repeat;
+}
+
+/* line 327, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.mobile_item_6 {
+  background: url(/bg/trip_6.jpg) center center/cover no-repeat;
+}
+
+/* line 329, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.mobile_item_subtitle {
+  font-size: 24px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+}
+
+/* line 338, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.mobile_item_plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  bottom: 36px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #000;
+  margin: 0 auto;
+  border-radius: 100%;
+  padding: 6px;
+  cursor: pointer;
+}
+
+/* line 356, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.car .header {
+  padding-top: 57px;
+  height: 499px;
+  background-color: #070716;
+}
+
+/* line 360, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.car .header .title {
+  width: 112px;
+  height: 24px;
+  padding: 8px 15px;
+  font-size: 11px;
+  font-weight: bold;
+  text-align: center;
+  color: #070716;
+  background-color: #fff;
+}
+
+/* line 369, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.car .header .subtitle {
+  font-size: 38px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.26;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+}
+
+/* line 378, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.car .header .text {
+  font-size: 17px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.24;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+}
+
+/* line 387, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.car .header img {
+  width: 759px;
+  display: block;
+  margin: 56px auto 0 auto;
+}
+
+/* line 392, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.car .footer {
+  height: 397px;
+  padding-top: 217px;
+  background: url(/bg/second.jpg);
+}
+
+/* line 396, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.car .footer .text {
+  width: 297px;
+  height: 42px;
+  margin: 0 auto;
+  font-size: 17px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.41;
+  letter-spacing: normal;
+  text-align: center;
+  color: #222;
+}
+
+/* line 408, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.text_1 {
+  width: 297px;
+  height: 42px;
+  margin: 0 auto;
+  font-size: 17px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.41;
+  letter-spacing: normal;
+  text-align: center;
+  color: #2afd00;
+}
+
+/* line 421, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.require {
+  padding: 68px 0 84px 0;
+}
+
+/* line 423, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.require_block {
+  margin: 33px 0;
+}
+
+/* line 425, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.require_block_nmb {
+  margin-bottom: 0px;
+}
+
+/* line 427, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.require_title {
+  font-size: 22px;
+  font-weight: 400;
+  color: #1ca8c3;
+}
+
+/* line 431, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.require_list {
+  list-style-type: none;
+  padding-left: 50px;
+  margin-top: 22px;
+}
+
+/* line 435, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.require_list li {
+  position: relative;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+/* line 441, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.require_list li:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -32px;
+  top: 3px;
+  width: 21px;
+  height: 20px;
+  background: url("../Icons/blue.png") center center/cover no-repeat;
+}
+
+/* line 450, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.require_descr {
+  color: #1ca8c3;
+}
+
+/* line 453, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.require .warning .require_title {
+  color: #ff5656;
+}
+
+/* line 457, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.require .warning .require_list li:before {
+  background: url("../Icons/pink.png") center center/cover no-repeat;
+}
+
+/* line 460, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.map {
+  height: 717px;
+  padding-top: 49px;
+  background: url("/bg/eng_bg.jpg") center center/cover no-repeat;
+}
+
+/* line 465, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.map .label {
+  font-size: 11px;
+  font-weight: 100;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
+  background: #fff;
+  color: #070716;
+}
+
+/* line 475, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.map .title {
+  padding-top: 32px;
+  font-size: 38px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+}
+
+/* line 484, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.map .subtitle {
+  color: #fff;
+}
+
+/* line 486, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.map .link {
+  padding-top: 466px;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: normal;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+/* line 493, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.map .link a {
+  color: #1fbad6;
+}
+
+/* line 496, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+footer {
+  padding: 14px 23px 39px 23px;
+}
+
+/* line 499, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+footer a_divider {
+  text-decoration: none;
+}
+
+/* line 504, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.footer_divider {
+  width: 299px;
+  height: 4px;
+  background-color: #1fbad6;
+  margin: 0 auto;
+}
+
+/* line 509, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.footer_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 32px;
+}
+
+/* line 514, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.footer_wrapper > div {
+  width: 33%;
+}
+
+/* line 516, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.footer_wrapper > div:nth-child(3) {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* line 519, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.footer_social {
+  width: 160px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 523, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.footer_social_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 4px;
+  width: 32px;
+  height: 32px;
+  background-color: #070716;
+  border-radius: 100%;
+}
+
+/* line 532, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.footer_social_item i {
+  color: #fff;
+}
+
+/* line 534, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.footer_links {
+  width: 390px;
+  margin: 0 auto;
+}
+
+/* line 537, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.footer_links_main {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+/* line 541, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.footer_links_main a {
+  color: #070716;
+  font-size: 15px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+/* line 546, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.footer_links_sub {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/* line 550, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.footer_links_sub a {
+  color: #999999;
+  font-size: 11px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+/* line 555, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.footer_links_lang {
+  display: block;
+  margin: 0 auto;
+  color: #1fbad6;
+  font-size: 11px;
+  font-weight: 400;
+  margin-top: 19px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* line 565, C:/Users/user/Desktop/Курс 2/sass/_general.sass */
+.xs-visible {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  /* line 3, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .menu_item {
+    padding-right: 20px;
+  }
+  /* line 5, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .menu_link {
+    font-size: 13px;
+  }
+  /* line 8, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .promo_header {
+    font-size: 50px;
+  }
+  /* line 11, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .reasons_block {
+    align-items: flex-start;
+  }
+  /* line 13, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .reasons_descr {
+    width: 300px;
+  }
+  /* line 16, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .mobile_item {
+    width: 290px;
+  }
+  /* line 18, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .mobile_item_subtitle {
+    font-size: 22px;
+  }
+  /* line 20, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .choice {
+    padding: 55px 0;
+    min-height: 840px;
+  }
+  /* line 24, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .require br {
+    display: none;
+  }
+  /* line 27, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .footer_wrapper > div {
+    width: 50%;
+  }
+  /* line 29, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .footer_wrapper > div:nth-child(1) {
+    width: 25%;
+  }
+  /* line 31, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .footer_wrapper > div:nth-child(3) {
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  /* line 35, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .footer_mobile {
+    display: flex;
+  }
+  /* line 37, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .footer_mobile a {
+    margin: 0 3px;
+  }
+  /* line 39, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .footer_mobile a img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 991px) {
+  /* line 42, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .title {
+    font-size: 28px;
+  }
+  /* line 45, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .menu_item {
+    padding-right: 8px;
+  }
+  /* line 47, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .menu_link {
+    font-size: 10px;
+  }
+  /* line 51, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .subheader_logo img {
+    width: 100%;
+  }
+  /* line 53, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .subheader_official {
+    font-size: 11px;
+  }
+  /* line 55, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .subheader_phone {
+    font-size: 18px;
+  }
+  /* line 57, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .subheader_btn {
+    margin-top: 21px;
+    height: 40px;
+    width: 100%;
+  }
+  /* line 62, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .promo_header {
+    font-size: 40px;
+  }
+  /* line 64, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .promo_subheader {
+    font-size: 30px;
+  }
+  /* line 67, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .reasons_block {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* line 70, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .reasons_round {
+    margin-right: 0;
+  }
+  /* line 72, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .reasons_descr {
+    width: 300px;
+    margin-top: 20px;
+  }
+  /* line 75, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .choice {
+    min-height: 800px;
+  }
+  /* line 77, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .choice_img {
+    width: 100%;
+  }
+  /* line 79, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .world {
+    min-height: 650px;
+  }
+  /* line 82, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .footer_wrapper {
+    flex-wrap: wrap;
+  }
+  /* line 84, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .footer_wrapper > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  /* line 89, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .footer_wrapper > div:nth-child(1) {
+    width: 100%;
+  }
+  /* line 91, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .footer_wrapper > div:nth-child(3) {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 95, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .title {
+    margin-top: 25px;
+  }
+  /* line 97, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .menu {
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100vh;
+    padding: 20px 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 0.6s all;
+  }
+  /* line 109, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .menu_active {
+    left: 0;
+  }
+  /* line 111, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .menu_item {
+    padding-right: 0;
+    border: none;
+    margin: 10px 0;
+  }
+  /* line 115, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .menu_link {
+    font-size: 20px;
+  }
+  /* line 117, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 26px;
+    height: 12px;
+  }
+  /* line 125, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .hamburger span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 2px;
+    transition: 0.5s all;
+  }
+  /* line 133, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .hamburger_active span {
+    margin-bottom: -2px;
+  }
+  /* line 135, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .hamburger_active span:nth-child(1) {
+    transform: translateY(3px) rotate(-45deg);
+  }
+  /* line 137, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .hamburger_active span:nth-child(2) {
+    display: none;
+  }
+  /* line 139, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .hamburger_active span:nth-child(3) {
+    transform: translateY(3px) rotate(45deg);
+  }
+  /* line 141, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .xs-hidden {
+    display: none;
+  }
+  /* line 143, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .xs-visible {
+    display: block;
+  }
+  /* line 146, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .subheader_phone {
+    display: block;
+    margin-top: 10px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  /* line 154, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .subheader_btn {
+    display: block;
+    width: 200px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  /* line 161, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .promo_header {
+    line-height: 45px;
+  }
+  /* line 163, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .reasons {
+    padding: 40px 0;
+  }
+  /* line 165, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .reasons_descr {
+    width: 350px;
+  }
+  /* line 167, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .reasons_subtitle {
+    text-align: center;
+  }
+  /* line 169, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .reasons_text {
+    margin-top: 10px;
+  }
+  /* line 171, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .mobile {
+    padding: 40px 0;
+  }
+  /* line 173, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .choice {
+    min-height: 600px;
+    padding: 40px 0;
+  }
+  /* line 176, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .require {
+    padding: 40px 0;
+  }
+  /* line 178, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .world {
+    min-height: 450px;
+  }
+}
+
+@media (max-width: 575px) {
+  /* line 181, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  nav {
+    position: fixed;
+    height: 30px;
+    z-index: 3;
+    width: 100%;
+  }
+  /* line 186, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  header {
+    height: 30px;
+  }
+  /* line 188, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .title {
+    font-size: 16px;
+    margin-top: 15px;
+    line-height: 16px;
+  }
+  /* line 192, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .subtitle {
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 11px;
+  }
+  /* line 196, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .subheader {
+    height: 60px;
+    top: 30px;
+  }
+  /* line 199, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .subheader_official {
+    display: none;
+  }
+  /* line 201, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .subheader_logo {
+    margin-top: 16px;
+  }
+  /* line 203, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .subheader_phone {
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 11px;
+  }
+  /* line 208, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .subheader_btn {
+    width: 110px;
+    height: 22px;
+    font-size: 9px;
+    margin-top: 6px;
+  }
+  /* line 215, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .promo {
+    min-height: 400px;
+    padding: 93px 0 35px 0;
+  }
+  /* line 218, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .promo_descr {
+    display: none;
+  }
+  /* line 220, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .promo_header {
+    font-size: 30px;
+    padding: 0 24px;
+    line-height: 35px;
+  }
+  /* line 224, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .promo_subheader {
+    font-size: 20px;
+    margin-top: 33px;
+    padding: 0 10px;
+    line-height: 30px;
+  }
+  /* line 229, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .promo_btn {
+    width: 210px;
+    height: 50px;
+    margin-top: 72px;
+    font-size: 16px;
+  }
+  /* line 235, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .menu {
+    width: 85%;
+  }
+  /* line 237, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .menu_item {
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+  }
+  /* line 241, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .menu_link {
+    display: block;
+  }
+  /* line 243, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .reasons {
+    padding: 22px 0 36px 0;
+  }
+  /* line 245, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .reasons_block {
+    margin-top: 26px;
+  }
+  /* line 247, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .reasons_round {
+    width: 100px;
+    height: 100px;
+  }
+  /* line 250, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .reasons_descr {
+    width: 100%;
+    margin-top: 27px;
+  }
+  /* line 253, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .reasons_subtitle {
+    font-size: 16px;
+  }
+  /* line 255, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .title {
+    font-size: 16px;
+    margin-top: 15px;
+    line-height: 16px;
+  }
+  /* line 260, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .mobile_item {
+    width: 323px;
+    height: 254px;
+    margin: 27px 1px 30px 0;
+    opacity: 0.9;
+  }
+  /* line 265, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .car {
+    height: 390px;
+  }
+  /* line 267, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .car .subtitle {
+    display: none;
+  }
+  /* line 269, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .car .text_1 {
+    display: none;
+  }
+  /* line 272, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .car .header img {
+    width: 300px;
+    height: 190px;
+    margin: 35px 0 23px;
+  }
+  /* line 276, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .car .footer {
+    background-image: none;
+    height: 0;
+    padding: 0;
+  }
+  /* line 280, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .car .footer .text {
+    margin-top: -100px;
+    font-size: 17px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+  }
+  /* line 289, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .require {
+    margin-top: 100px;
+  }
+  /* line 291, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .require_title {
+    font-size: 16px;
+  }
+  /* line 294, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .require ul li {
+    font-size: 14px;
+  }
+  /* line 296, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .map {
+    height: 360px;
+  }
+  /* line 298, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .map .title {
+    font-size: 16px;
+  }
+  /* line 300, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .map .subtitle {
+    font-size: 14px;
+  }
+  /* line 302, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .map .link {
+    padding-top: 140px;
+  }
+  /* line 305, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .footer_divider {
+    width: 253px;
+    height: 4px;
+    margin: 11px auto;
+    background-color: #1fbad6;
+  }
+  /* line 310, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .footer_links {
+    margin-top: -75px;
+  }
+  /* line 313, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .footer_links_main a {
+    margin-top: 50px;
+    font-size: 10px;
+  }
+  /* line 317, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .footer_links_sub a {
+    margin: 13px 0 13px 2px;
+    font-size: 8px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #999;
+  }
+  /* line 326, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .footer_wrapper {
+    position: relative;
+  }
+  /* line 328, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .footer_wrapper .footer_social {
+    position: absolute;
+    margin-top: 115px;
+  }
+  /* line 331, C:/Users/user/Desktop/Курс 2/sass/_media.sass */
+  .footer_mobile {
+    margin-top: 60px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
